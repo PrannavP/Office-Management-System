@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    position: relative;
+}
+
+.header{
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.header h1{
+    margin-top: 12px;
+    margin-left: 160px;
+    font-size: 26px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header p{
+    display: inline-block;
+    margin-left: 70%;
+    font-size: 21px;
+}
+
+nav{
+    display: inline-block;
+}
+
+.side-nav{
+    height: 725px;
+    padding-left: 6.7px;
+    border-right: 2px solid black;
+}
+
+.side-nav p{
+    font-size: 11.5px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.side-tab{
+    width: 120px;
+    /* margin-top: 16px; */
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.payroll-text{
+    margin-left: 6px;
+}
+
+.meeting-text{
+    margin-left: 3px;
+}
+
+.ticket-text{
+    margin-left: 10px;
+}
+
+.settings{
+    margin-top: 200px;
+}
+
+.setting-text{
+    margin-left: 6px;
+}
+
+a{
+    color: inherit;
+}
+
+
+/* main */
+.main-container{
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    /* width: 100%; */
+}
+
+.nav{
+    position: absolute;
+    top: 5%;
+}
+
+.back, .add{
+    display: inline-block;
+}
+
+.add{
+    margin-left: 93%;
+}
+
+.client-list-table{
+    margin-top: 17px;
+    margin-left: 30px;
+}
+
+th{
+    padding: 10px 70px;
+}
+
+td{
+    text-align: center;
+    padding: 8px;
+}
