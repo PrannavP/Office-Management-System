@@ -41,3 +41,7 @@ button{
 p{
     color: red;
 }
+
+.showpasswordbtn{
+    width: 100px;
+}

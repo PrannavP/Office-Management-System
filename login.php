@@ -24,7 +24,7 @@
             die("Connection failed: " . mysqli_connect_error());
         };
 
-        if($_SERVER["REQUEST_METHOD"] == "POST"){
+        if(isset($_POST['login'])){
             $email = $_POST["email"];
             $password = $_POST['password'];
 
@@ -55,13 +55,17 @@
             <input type="email" id="email" placeholder="Email" name="email"><br>
 
             <label for="password" class="passwordLabel">Password: </label><br>
-            <input type="password" id="password" placeholder="Password" name="password"><br>
+            <input type="password" id="password" placeholder="Password" name="password">
+            <!-- <input type="button" value="S/H" id="showpassword" class="showpasswordbtn"><br> -->
+            <img src="./icons/visibility_FILL0_wght400_GRAD0_opsz24.svg" alt="showing password image"><br>
 
-            <button id="login">Login</button>
+            <button id="login" name="login">Login</button>
 
         </form>
 
     </div>
+
+    <script src="./js/login.js"></script>
     
 </body>
 </html>

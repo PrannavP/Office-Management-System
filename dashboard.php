@@ -146,11 +146,27 @@
 
     </div>
 
-    <script src="./js/dashboard.js"></script>
+    <!-- <script src="./js/dashboard.js"></script> -->
 
     <?php }else{
         header("Location: ./login.php");
     } ?>
+
+    <script>
+        setInterval(function() {
+            var currentTime = new Date ( );    
+            var currentHours = currentTime.getHours ( );   
+            var currentMinutes = currentTime.getMinutes ( );   
+            var currentSeconds = currentTime.getSeconds ( );
+            currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes;   
+            currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;    
+            var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";    
+            currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;    
+            currentHours = ( currentHours == 0 ) ? 12 : currentHours;    
+            var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+            document.getElementById("time").innerHTML = currentTimeString;
+        }, 1000);
+    </script>
     
 </body>
 </html>

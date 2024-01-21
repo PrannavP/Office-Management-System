@@ -6,8 +6,8 @@
     <title>Ticket</title>
 </head>
 <body>
-
-    <h1>hello ticket</h1>
     
+    
+
 </body>
 </html>
