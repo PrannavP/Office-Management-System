@@ -3,7 +3,7 @@
     session_start();
 
     // Redirect the user to the login page
-    header("Location: ../../login.php");
+    header("Location: ../../index.php");
 
     session_destroy();
     

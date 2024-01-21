@@ -115,7 +115,7 @@
 
                 <tr>
 
-                    <td><?php echo $rows['employee_name']?></td>
+                    <td><p><?php echo $rows['employee_name']?></p></td>
                     <td><?php echo $rows['employee_salary']?></td>
                     <td><?php echo $rows['employee_position']?></td>
                     <td><?php echo $rows['employee_accountnumber']?></td>

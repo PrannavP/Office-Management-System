@@ -149,7 +149,7 @@
     <!-- <script src="./js/dashboard.js"></script> -->
 
     <?php }else{
-        header("Location: ./login.php");
+        header("Location: ./index.php");
     } ?>
 
     <script>
